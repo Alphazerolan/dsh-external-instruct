@@ -1,0 +1,5 @@
+# Keep the repository LF-only so the .mjs entry point stays byte-identical on
+# every platform.
+* text=auto eol=lf
+*.png binary
+*.webp binary
