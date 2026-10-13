@@ -1,0 +1,52 @@
+{
+  "name": "dsh-external-instruct",
+  "version": "0.1.0",
+  "description": "Loopback HTTP endpoint for DeepSeek Harness (dsh): let any external app or model hand instructions to a running dsh Web GUI, as first-class sessions that show up in the sidebar.",
+  "type": "module",
+  "main": "external-instruct.mjs",
+  "exports": {
+    ".": "./external-instruct.mjs"
+  },
+  "files": [
+    "external-instruct.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "cordis-plugin",
+    "dsh-plugin",
+    "agent",
+    "automation",
+    "http",
+    "loopback"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.0-rc.2"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh": ">=0.2.0-rc.2"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh": {
+      "optional": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alphazerolan/dsh-external-instruct.git"
+  },
+  "scripts": {
+    "check": "node --check external-instruct.mjs"
+  }
+}

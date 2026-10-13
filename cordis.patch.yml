@@ -1,0 +1,12 @@
+# Example profile patch for dsh-external-instruct.
+#
+# Add this entry to your dsh profile's cordis.patch.yml (that file is a YAML
+# array, so append the "insert" item to it), or load it once from a terminal:
+#
+#   dsh --profile web --patch ./cordis.patch.yml
+#
+# NOTE: `name` resolves relative to THIS FILE's directory, not the profile
+# directory. An absolute path is the safest form.
+- insert:
+    - id: external-instruct
+      name: 'C:\Users\You\.dsh\profiles\desktop\external-instruct.mjs'
