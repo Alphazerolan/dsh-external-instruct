@@ -138,13 +138,6 @@ $b.finalResponse   # → XK-7788（上下文延续）
 
 > ⚠️ `workspacePath` 不存在时会被自动创建——拼错路径不会报错，只会静默多出一个空工作区。
 
-## 关于卡片外观
-
-外部指令在对话里显示为「通知卡」（标题、说明、用时），这些**文案是 dsh 内建**的，
-由消息 `source.kind` 决定：官方 UI 只认识 `goal / agent-message / team-message / subagent-settled /
-webhook / schedule / tool-jobs / cordis-host-runner`，其余一律落到默认标题「收到执行请求」。
-本插件有意使用自定义 `kind: external-instruct`，以便在会话日志里和 GitHub webhook 等来源区分开。
-
 ## 安全模型
 
 - **仅回路**：非 127/8、::1、IPv4-mapped 的 socket 一律拒绝；`Host` 头必须回路；
