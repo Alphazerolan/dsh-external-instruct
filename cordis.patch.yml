@@ -9,4 +9,4 @@
 # directory. An absolute path is the safest form.
 - insert:
     - id: external-instruct
-      name: 'C:\Users\You\.dsh\profiles\desktop\external-instruct.mjs'
+      name: 'C:\Users\<you>\.dsh\profiles\desktop\external-instruct.mjs'

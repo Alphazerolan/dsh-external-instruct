@@ -1,5 +1,7 @@
 # dsh-external-instruct
 
+> **自留用仓库** / Personal-use repository —— 主要给我自己用，接口与行为随我的环境变化，不承诺兼容性。
+
 让**任意外部应用或模型**通过本机 HTTP 给正在运行的 DeepSeek Harness（dsh）Web GUI 下达指令；
 指令由 GUI **自己**创建成会话，所以会出现在左侧栏的工作区树下，和手工开的会话没有区别。
 
@@ -29,7 +31,7 @@
 ```yaml
 - insert:
     - id: external-instruct
-      name: 'C:\Users\You\.dsh\profiles\desktop\external-instruct.mjs'
+      name: 'C:\Users\<you>\.dsh\profiles\desktop\external-instruct.mjs'
 ```
 
 要点：

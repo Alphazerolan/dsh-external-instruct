@@ -1,5 +1,8 @@
 # dsh-external-instruct
 
+> **Personal-use repository.** Built mainly for my own setup; the interface and behaviour follow my
+> environment and carry no compatibility promise.
+
 Let **any external app or model** hand instructions to a running DeepSeek Harness (dsh) Web GUI over
 loopback HTTP. The instruction is turned into a session **by the GUI process itself**, so it shows up
 in the left sidebar's workspace tree exactly like a session you opened by hand.
@@ -33,7 +36,7 @@ Drop `external-instruct.mjs` into your dsh profile directory and append one entr
 ```yaml
 - insert:
     - id: external-instruct
-      name: 'C:\Users\You\.dsh\profiles\desktop\external-instruct.mjs'
+      name: 'C:\Users\<you>\.dsh\profiles\desktop\external-instruct.mjs'
 ```
 
 - `name:` resolves **relative to the patch file's own directory** (not the profile directory);
