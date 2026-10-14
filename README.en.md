@@ -111,6 +111,15 @@ An external AI's decision rule is one line: *continuing the previous topic and I
 
 > ⚠️ A missing `workspacePath` is auto-created: a typo silently produces an extra empty workspace.
 
+## About the notice card
+
+External instructions render as a "notice card" (title, explanation, elapsed time). Those strings are
+**built into dsh** and chosen by the message's `source.kind`: the official UI recognizes
+`goal / agent-message / team-message / subagent-settled / webhook / schedule / tool-jobs /
+cordis-host-runner`, and anything else falls back to the default title ("收到执行请求"). This plugin
+deliberately uses its own `kind: external-instruct` so that external calls stay distinguishable from
+GitHub webhook events and the like in session logs.
+
 ## Security model
 
 - **Loopback only** — non-loopback sockets are refused; `Host` must be loopback;
